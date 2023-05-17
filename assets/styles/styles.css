@@ -23,7 +23,8 @@ body {
   background-image: radial-gradient(ellipse farthest-corner at 45px 30px, var(--backgroundColor), var(--colorNegro));
 
 }
-main{
+
+main {
   height: 100vh;
 }
 
@@ -31,8 +32,14 @@ img {
   width: 50%;
 }
 
+a {
+  text-decoration: none;
+  color: var(--colorBlanco);
+}
+
 h1,
-h2 {
+h2,
+h3 {
   text-align: center;
 }
 
@@ -96,11 +103,12 @@ h2 {
 
 /* MODAL */
 /* DIRECTORIO */
-.wrapper--directorio{
+.wrapper--directorio {
   background: var(--backgroundColor);
   border-radius: 10px;
   padding: 10px;
 }
+
 .overlay {
   position: fixed;
   background: rgb(0, 0, 0);
@@ -148,7 +156,7 @@ h2 {
   text-align: center;
 }
 
-.redes--modal{
+.redes--modal {
   width: 100%;
   height: 50%;
   display: flex;
@@ -186,67 +194,68 @@ h2 {
 
 /* SERVICIOS */
 
-.wrapper--servicios{
+.wrapper--servicios {
   background: var(--backgroundColor);
   border-radius: 10px;
   padding: 10px;
   margin-top: 51px;
-  height: 40%;
+  height: 60%;
 }
+
 .container--servicios {
 
   padding: 10px;
   text-align: center;
   display: flex;
-  justify-content: center;
   align-items: center;
   align-content: center;
   width: 100%;
-  height: 100%;
+  height: 90%;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-padding: 10px;
   column-gap: 10px;
 }
 
+
 /* TARJETAS */
 
 
 .tarjeta {
-  padding: 50px;
+  padding: 20px;
   text-align: center;
   scroll-snap-align: start;
   border-radius: 50px;
-  width: 572px;
-  height: 100%;
+  width: 740px;
+  height: 80%;
   border-radius: 20%;
 }
 
 .tarjeta h2 {
-  margin-top: -40px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 20px;
 }
 
 
 a>p {
-  text-transform: none;
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 14px;
+  width: 200px;
 }
 
 .tarjeta:nth-child(1) {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/vabajaScreenShot.png");
+  background-image: url("../img/vozenoff1.jpg");
   background-position: center center;
   -webkit-filter: blur(2px);
   transition: 1s ease;
 }
 
 .tarjeta:nth-child(1):hover {
+  background-color: rgba(0, 0, 0, .3);
   transition: 1s ease;
   -webkit-filter: blur(0px);
   cursor: pointer;
@@ -256,7 +265,7 @@ a>p {
 .tarjeta:nth-child(2) {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/barrasdesignsScreenshot.png");
+  background-image: url("../img/voiceover2.jpeg");
   background-position: center center;
   -webkit-filter: blur(2px);
   transition: 1s ease;
@@ -274,7 +283,7 @@ a>p {
 .tarjeta:nth-child(3) {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/mFrutosScreenShot.png");
+  background-image: url("../img/desarrollo.jpg");
   background-position: center center;
   -webkit-filter: blur(2px);
   transition: 1s ease;
@@ -291,7 +300,7 @@ a>p {
 .tarjeta:nth-child(4) {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/JanRadaScreenShot.png");
+  background-image: url("../img/promocionales1.jpg");
   background-position: center center;
   -webkit-filter: blur(2px);
   transition: 1s ease;
@@ -471,5 +480,13 @@ a>p {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+/* MEDIA QUERIES  */
+@media (max-width: 768px) {
+
+  .tarjeta {
+    -webkit-filter: blur(0px) !important;
   }
 }
