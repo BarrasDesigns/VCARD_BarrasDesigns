@@ -265,7 +265,7 @@ a>p {
 .tarjeta:nth-child(2) {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/voiceover2.jpeg");
+  background-image: url("../img/desarrollo.jpg");
   background-position: center center;
   -webkit-filter: blur(2px);
   transition: 1s ease;
@@ -283,7 +283,7 @@ a>p {
 .tarjeta:nth-child(3) {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/desarrollo.jpg");
+  background-image: url("../img/promocionales1.jpg");
   background-position: center center;
   -webkit-filter: blur(2px);
   transition: 1s ease;
