@@ -19,7 +19,7 @@
 body {
   font-family: 'Roboto', 'Sans serif';
   color: var(--colorBlanco);
-  background: var(--backgroundColor);
+  /* background: var(--backgroundColor); */
   background-image: radial-gradient(ellipse farthest-corner at 45px 30px, var(--backgroundColor), var(--colorNegro));
 
 }
@@ -55,10 +55,30 @@ h3 {
 
 .icons {
   background: var(--colorBlanco);
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  padding: 10px;
+  padding: 5px;
+}
+
+.icons:hover {
+  transform: scale(1.3);
+  background-color: var(--backgroundColor);
+  color: var(--colorBlanco) !important;
+}
+
+.icons2 {
+  background: var(--colorBlanco);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.icons2:hover {
+  transform: scale(1.3);
+  background-color: var(--backgroundColor1);
+  color: var(--colorBlanco) !important;
 }
 
 .bg_animate {
