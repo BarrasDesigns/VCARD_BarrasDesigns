@@ -1,0 +1,8 @@
+{
+    "breadcrumbs.icons": true,
+    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.editor.showIcons": true,
+    "workbench.layoutControl.enabled": true,
+    "window.commandCenter": false,
+    "debug.internalConsoleOptions": "openOnFirstSessionStart"
+}
