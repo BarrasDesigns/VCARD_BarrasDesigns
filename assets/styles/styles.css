@@ -2,6 +2,7 @@
 
 :root {
   --backgroundColor: #ae46f3;
+  --backgroundColorSections: black;
   --backgroundColor1: #262ee4;
   --colorNegro: black;
   --colorBlanco: white;
@@ -124,7 +125,7 @@ h3 {
 /* MODAL */
 /* DIRECTORIO */
 .wrapper--directorio {
-  background: var(--backgroundColor);
+  background: var(--backgroundColorSections);
   border-radius: 10px;
   padding: 10px;
 }
@@ -215,7 +216,7 @@ h3 {
 /* SERVICIOS */
 
 .wrapper--servicios {
-  background: var(--backgroundColor);
+  background: var(--backgroundColorSections);
   border-radius: 10px;
   padding: 10px;
   margin-top: 51px;
