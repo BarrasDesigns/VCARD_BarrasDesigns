@@ -227,33 +227,41 @@ h3 {
 .tarjeta--portafolio {
   display: block;
   padding: 50px;
-  text-align: center;
   scroll-snap-align: start;
   border-radius: 50px;
   width: 200px;
   height: 196px;
   border-radius: 20%;
+  
+  position: relative;
+  
 }
 
-.tarjeta--portafolio h2 {
-  margin-top: -40px;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 20px;
+.tarjeta--titulo {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.65);
+  text-transform: uppercase;
+
+
 }
 
-
-a>p {
+/* 
+.tarjeta--titulo  {
+  position: absolute;
   text-transform: none;
   text-align: center;
   font-weight: 700;
-  font-size: 14px;
-}
+
+  color: white;
+  margin: 0;
+  border-radius: 50%;
+  padding: 10px;
+} */
 
 .tarjeta--portafolio:nth-child(1) {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/1.jpeg");
+  background-image: url("../img/TSVCard.png");
   background-position: center center;
   -webkit-filter: blur(2px);
   transition: 1s ease;
@@ -269,7 +277,7 @@ a>p {
 .tarjeta--portafolio:nth-child(2) {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/1.jpeg");
+  background-image: url("../img/TSLanding.png");
   background-position: center center;
   -webkit-filter: blur(2px);
   transition: 1s ease;
@@ -285,7 +293,7 @@ a>p {
 .tarjeta--portafolio:nth-child(3) {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/1.jpeg");
+  background-image: url("../img/Motiontech.png");
   background-position: center center;
   -webkit-filter: blur(2px);
   transition: 1s ease;
@@ -301,7 +309,7 @@ a>p {
 .tarjeta--portafolio:nth-child(4) {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/1.jpeg");
+  background-image: url("../img/Dra.Sirelda.png");
   background-position: center center;
   -webkit-filter: blur(2px);
   transition: 1s ease;
@@ -317,7 +325,7 @@ a>p {
 .tarjeta--portafolio:nth-child(5) {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/1.jpeg");
+  background-image: url("../img/KikeMillan.png");
   background-position: center center;
   -webkit-filter: blur(2px);
   transition: 1s ease;
@@ -333,7 +341,7 @@ a>p {
 .tarjeta--portafolio:nth-child(6) {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/1.jpeg");
+  background-image: url("../img/EasyHomes.png");
   background-position: center center;
   -webkit-filter: blur(2px);
   transition: 1s ease;
@@ -345,10 +353,11 @@ a>p {
   cursor: pointer;
 
 }
+
 .tarjeta--portafolio:nth-child(7) {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/1.jpeg");
+  background-image: url("../img/MarioSantana.png");
   background-position: center center;
   -webkit-filter: blur(2px);
   transition: 1s ease;
@@ -360,10 +369,11 @@ a>p {
   cursor: pointer;
 
 }
+
 .tarjeta--portafolio:nth-child(8) {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/1.jpeg");
+  background-image: url("../img/OscielRamos.png");
   background-position: center center;
   -webkit-filter: blur(2px);
   transition: 1s ease;
@@ -375,10 +385,11 @@ a>p {
   cursor: pointer;
 
 }
+
 .tarjeta--portafolio:nth-child(9) {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/1.jpeg");
+  background-image: url("../img/BarrasDesigns.png");
   background-position: center center;
   -webkit-filter: blur(2px);
   transition: 1s ease;
@@ -390,10 +401,11 @@ a>p {
   cursor: pointer;
 
 }
+
 .tarjeta--portafolio:nth-child(10) {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/1.jpeg");
+  background-image: url("../img/MasSal.png");
   background-position: center center;
   -webkit-filter: blur(2px);
   transition: 1s ease;
@@ -404,6 +416,12 @@ a>p {
   -webkit-filter: blur(0px);
   cursor: pointer;
 
+}
+
+@media (max-width: 768px) {
+  .tarjeta--portafolio {
+    -webkit-filter: blur(0px) !important;
+  }
 }
 
 /* SERVICIOS */
