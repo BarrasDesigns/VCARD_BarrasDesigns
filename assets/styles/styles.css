@@ -375,6 +375,36 @@ a>p {
   cursor: pointer;
 
 }
+.tarjeta--portafolio:nth-child(9) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/1.jpeg");
+  background-position: center center;
+  -webkit-filter: blur(2px);
+  transition: 1s ease;
+}
+
+.tarjeta--portafolio:nth-child(9):hover {
+  transition: 1s ease;
+  -webkit-filter: blur(0px);
+  cursor: pointer;
+
+}
+.tarjeta--portafolio:nth-child(10) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/1.jpeg");
+  background-position: center center;
+  -webkit-filter: blur(2px);
+  transition: 1s ease;
+}
+
+.tarjeta--portafolio:nth-child(10):hover {
+  transition: 1s ease;
+  -webkit-filter: blur(0px);
+  cursor: pointer;
+
+}
 
 /* SERVICIOS */
 
