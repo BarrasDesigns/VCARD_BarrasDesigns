@@ -10,6 +10,7 @@
     <!-- Google Fonts & FontAwesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="./assets/styles/styles.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -39,82 +40,6 @@
         }
     </script>
 
-    <style>
-        /* Custom Design Tokens & Variables */
-        :root {
-            --backgroundColor: #ae46f3;
-            --backgroundColor1: #262ee4;
-            --colorNegro: #0B0B14;
-            --colorBlanco: #ffffff;
-        }
-
-        body {
-            background-color: var(--colorNegro);
-            background-image:
-                radial-gradient(ellipse 80% 50% at 50% -20%, rgba(174, 70, 243, 0.25), transparent),
-                radial-gradient(ellipse 60% 40% at 50% 120%, rgba(38, 46, 228, 0.2), transparent);
-            background-attachment: fixed;
-            color: var(--colorBlanco);
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            min-height: 100vh;
-        }
-
-        /* Glassmorphism Styles */
-        .glass-vcard {
-            background: rgba(22, 19, 42, 0.75);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .glass-card-sm {
-            background: rgba(255, 255, 255, 0.04);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            transition: all 0.3s ease;
-        }
-
-        .glass-card-sm:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(174, 70, 243, 0.4);
-            transform: translateY(-2px);
-        }
-
-        /* Horizontal Scrollbars */
-        .custom-scrollbar::-webkit-scrollbar {
-            height: 6px;
-        }
-
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 10px;
-        }
-
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: linear-gradient(90deg, var(--backgroundColor), var(--backgroundColor1));
-            border-radius: 10px;
-        }
-
-        /* Pulse glow animation */
-        @keyframes subtlePulse {
-
-            0%,
-            100% {
-                opacity: 0.6;
-                transform: scale(1);
-            }
-
-            50% {
-                opacity: 0.9;
-                transform: scale(1.05);
-            }
-        }
-
-        .pulse-glow {
-            animation: subtlePulse 4s ease-in-out infinite;
-        }
-    </style>
 </head>
 
 <body class="py-4 sm:py-8 px-3 sm:px-4 flex justify-center items-start selection:bg-brandPurple selection:text-white">
